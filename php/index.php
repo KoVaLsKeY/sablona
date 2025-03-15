@@ -25,7 +25,7 @@
         <div class="slide fade">
           <img src="img/banner2.jpg">
           <div class="slide-text">
-            Druhý nadpis
+            Druhý nadpi
           </div>
         </div>
         
