@@ -21,7 +21,7 @@
             Prvý nadpis
           </div>
         </div>
-        
+      
         <div class="slide fade">
           <img src="img/banner2.jpg">
           <div class="slide-text">
