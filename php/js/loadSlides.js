@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('../data/slides.json')
+    fetch('../php/data/slides.json')
         .then(response => response.json())
         .then(slides => {
             const slidesContainer = document.querySelector('.slides-container');
