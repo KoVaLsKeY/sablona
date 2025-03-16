@@ -86,7 +86,9 @@
     
 <?php include 'C:/xampp/htdocs/sablona/php/footer.php'; ?>
 
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
+<script src="js/loadSlides.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 </body>
+
 </html>
