@@ -21,7 +21,7 @@
             Prvý nadpis
           </div>
         </div>
-      
+        
         <div class="slide fade">
           <img src="img/banner2.jpg">
           <div class="slide-text">
@@ -62,26 +62,22 @@
 <section class="container">
     <div class="row">
         <div class="col-100 text-center">
-           
+            <?php
+            $hour = date('H');
+            if ($hour < 12) {
+                echo "<h3>DObre rabo</h3>";
+            } elseif ($hour <18 ) {
+                echo "<h3>Dobry den</h3>";
+            }
+            ?>
         </div>
     </div>
 
 </section>
-<section class="container">
-    <?php include "otazky.php"; ?>
-    <?php for ($i = 1; $i < count($otazky); $i++) { ?>
-    <div class="accordion">
-        <div class="question"><?php echo $otazky[$i]; ?> </div>
-        <div class="answer"><?php echo $odpovede[$i]; ?> </div>
-    </div>
-  <?php  }?>
-</section>
     
 <?php include 'C:/xampp/htdocs/sablona/php/footer.php'; ?>
 
-<script src="js/loadSlides.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
-
 </html>
