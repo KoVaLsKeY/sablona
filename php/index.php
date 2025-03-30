@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<?php include 'C:/xampp/htdocs/sablona/php/header.php'; ?>
+<?php require 'C:/xampp/htdocs/sablona/php/header.php';?>
+<?php 
+$file_path1 = 'C:/xampp/htdocs/sablona/php/header.php'; 
+if(!require($file_path1)){
+  echo"Failed to include $file_path1";
+}?>
     
     <main>
       <section class="slides-container">
@@ -74,8 +78,11 @@
     </div>
 
 </section>
-    
-<?php include 'C:/xampp/htdocs/sablona/php/footer.php'; ?>
+<?php
+$file_path = "C:/xampp/htdocs/sablona/php/footer.php";
+if(!include($file_path)){
+  echo"Failed to include $file_path";
+} /*include 'C:/xampp/htdocs/sablona/php/footer.php';*/ ?>
 
 <script src="js/loadSlides.js"></script>
 <script src="js/menu.js"></script>

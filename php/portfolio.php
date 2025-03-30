@@ -11,22 +11,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header class="container main-header">
-            <div class="logo-holder">
-                <a href="index.html"><img src="img/logo.png" height="40 "></a>
-            </div>
-            <nav class="main-nav">
-            <ul class="main-menu" id="main-menu">
-                <li><a href="index.php">Domov</a></li>
-                <li><a href="portfolio.php">Portfólio</a></li>
-                <li><a href="qna.php">Q&A</a></li>
-                <li><a href="kontakt.php">Kontakt</a></li>
-            </ul>
-            <a class="hamburger" id="hamburger">
-                <i class="fa fa-bars"></i>
-            </a>
-            </nav>
-        </header>
+    <?php 
+$file_path1 = 'C:/xampp/htdocs/sablona/php/header.php'; 
+if(!require($file_path1)){
+  echo"Failed to include $file_path1";
+}?>
 
         <main>
             <section class="banner">
@@ -66,8 +55,11 @@
             </section>   
 
         </main>
-        <?php include 'C:/xampp/htdocs/sablona/php/footer.php'; ?>
-
+        <?php
+$file_path = "C:/xampp/htdocs/sablona/php/footer.php";
+if(!include($file_path)){
+  echo"Failed to include $file_path";
+} /*include 'C:/xampp/htdocs/sablona/php/footer.php';*/ ?>
     <script src="js/menu.js"></script>
     </body>
 </html>
