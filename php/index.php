@@ -66,14 +66,7 @@ if(!require($file_path1)){
 <section class="container">
     <div class="row">
         <div class="col-100 text-center">
-        <?php
-            $hour = date('H');
-            if ($hour < 12) {
-                echo "<h3>DObre rabo</h3>";
-            } elseif ($hour <18 ) {
-                echo "<h3>Dobry den</h3>";
-            }
-            ?>
+       <?php include "C:/xampp/htdocs/sablona/php/pridajPozdrav.php";?>
         </div>
     </div>
 
