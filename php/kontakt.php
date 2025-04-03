@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php 
-$file_path1 = 'C:/xampp/htdocs/sablona/php/header.php'; 
+$file_path1 = 'C:/xampp/htdocs/sablona/php/parts/header.php'; 
 if(!require($file_path1)){
   echo"Failed to include $file_path1";
 }?>
@@ -54,7 +54,7 @@ if(!require($file_path1)){
     </section>
   </main>
   <?php
-$file_path = "C:/xampp/htdocs/sablona/php/footer.php";
+$file_path = "C:/xampp/htdocs/sablona/php/parts/footer.php";
 if(!include($file_path)){
   echo"Failed to include $file_path";
 } /*include 'C:/xampp/htdocs/sablona/php/footer.php';*/ ?>

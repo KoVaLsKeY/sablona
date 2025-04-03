@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<?php require 'C:/xampp/htdocs/sablona/php/header.php';?>
+<?php require 'C:/xampp/htdocs/sablona/php/parts/header.php';?>
 <?php 
-$file_path1 = 'C:/xampp/htdocs/sablona/php/header.php'; 
+$file_path1 = 'C:/xampp/htdocs/sablona/php/parts/header.php'; 
 if(!require($file_path1)){
   echo"Failed to include $file_path1";
 }?>
@@ -66,13 +66,13 @@ if(!require($file_path1)){
 <section class="container">
     <div class="row">
         <div class="col-100 text-center">
-       <?php include "C:/xampp/htdocs/sablona/php/pridajPozdrav.php";?>
+       <?php include "C:/xampp/htdocs/sablona/php/parts/functions.php";?>
         </div>
     </div>
 
 </section>
 <?php
-$file_path = "C:/xampp/htdocs/sablona/php/footer.php";
+$file_path = "C:/xampp/htdocs/sablona/php/parts/footer.php";
 if(!include($file_path)){
   echo"Failed to include $file_path";
 } /*include 'C:/xampp/htdocs/sablona/php/footer.php';*/ ?>
