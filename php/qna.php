@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<?php 
+<?php include_once 'functions.php';
 $file_path1 = 'C:/xampp/htdocs/sablona/php/parts/header.php'; 
 if(!require($file_path1)){
   echo"Failed to include $file_path1";
@@ -29,14 +29,10 @@ if(!require($file_path1)){
         </div>
       </div>
     </section>
-    <section class="container">
-    <?php include "otazky.php"; ?>
-    <?php for ($i = 1; $i < count($otazky); $i++) { ?>
-    <div class="accordion">
-        <div class="question"><?php echo $otazky[$i]; ?> </div>
-        <div class="answer"><?php echo $odpovede[$i]; ?> </div>
-    </div>
-  <?php  }?>
+    
+    <?php 
+    insertQnA();
+    ?>
 </section>
     </section>
   </div>

@@ -25,4 +25,22 @@ function generateSlides($dir) {
         echo '</div>';
     }
 }
+function insertQnA(){
+    $json = file_get_contents("data/datas.json");
+    $data = json_decode($json, true);
+    $otazky = $data["otazky"];
+    $odpovede = $data["odpovede"];
+    echo ' <section class="container">';
+    for($i = 0;$i < count($otazky); $i++){
+        echo ' <div class="accordion">';
+        echo '<div class="question">';
+        echo $otazky[$i];
+        echo '</div>';
+        echo '<div class= "answer">';
+        echo $odpovede[$i];
+        echo '</div>';
+    
+    }
+    echo'</section>';
+}
 ?>

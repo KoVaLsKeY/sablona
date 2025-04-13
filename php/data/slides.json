@@ -1,0 +1,17 @@
+[
+  {
+      "imageSrc": "img/banners/banner1.jpg",
+      "text": "Prvý nadpis",
+      "url": "/portfolio"
+    },
+    {
+      "imageSrc": "img/banners/banner2.jpg",
+      "text": "Druhý nadpis",
+      "url": "/qna"
+    },
+    {
+      "imageSrc": "img/banners/banner3.jpg",
+      "text": "Tretí nadpis",
+      "url": "/kontakt"
+    }
+  ]

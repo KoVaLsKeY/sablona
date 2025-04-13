@@ -1,8 +1,9 @@
 <?php ?>
+
 <header class="container main-header">
     <div>
         <a href="index.html">
-            <img src="img/logo.png" height="40">
+            <img src="../php/img/portfolio/logo.png" height="40">
         </a>
     </div>
     <nav class="main-nav">

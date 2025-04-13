@@ -21,10 +21,10 @@ include_once "functions.php";
     
     <main>
       <section class="slides-container">
-      <?php 
-    include_once "functions.php";
-    generateSlides("img/banners"); 
-  ?>
+        <?php 
+        include_once "functions.php";
+         generateSlides("img/banners"); 
+        ?>
         
         <a id="prev" class="prev">❮</a>
         <a id="next" class="next">❯</a>
