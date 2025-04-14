@@ -10,7 +10,6 @@ $file_path1 = 'C:/xampp/htdocs/sablona/php/parts/header.php';
 if(!require($file_path1)){
   echo"Failed to include $file_path1";
 }
-include_once "functions.php";
 ?>
     
     <main>
