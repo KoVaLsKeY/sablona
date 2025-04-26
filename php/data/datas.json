@@ -15,5 +15,11 @@
   "banner1.jpg":"Prvy nadpis",
   "banner2.jpg":"Druhy nadpis",
   "banner3.jpg":"Treti nadpis"
+  },
+  "stranky":{
+    "index":["css/style.css", "css/slyder.css"],
+    "portfolio":["css/style.css", "css/portfolio.css"],
+    "qna":["css/style.css", "css/banner.css", "css/accordion.css"],
+    "kontakt":["css/style.css", "css/banner.css", "css/form.css"]
   }
 }

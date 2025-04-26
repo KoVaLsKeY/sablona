@@ -1,8 +1,9 @@
 <?php include_once "../php/functions.php";
 $menu = getMenuData("header");
-?>
 
-<header class="container main-header">
+$theme = $_GET["theme"] ?? "light"; // <-- виправлення?>
+
+<header style="background-color: <?php echo $theme === "dark"? "grey" : "white"; ?>" class="container main-header">
     <div class="logo-holder">
         <a href="<?php echo $menu['home']['path'];?>"> <!-- tu je chyba.
             Z cvičenia 4, slaid 10-13. 
@@ -12,8 +13,8 @@ $menu = getMenuData("header");
         </a>
     </div>
     <nav class="main-nav">
-        <ul class="main-menu" id="main-menu">
-            <?php printMenu($menu);?>
+        <ul class="main-menu" id="main-menu container">
+        <li><a href="<?php echo $theme ==="dark" ? "?theme=light" : "?theme=dark"; ?>">Spustit funkciu</a></li>             <?php printMenu($menu);?>
         </ul>
         <a class="hamburger" id="hamburger">
             <i class="fa fa-bars"></i>

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="sk">
+
 <?php include_once "parts/head.php"?>
 <body>
 <?php include_once 'functions.php';
